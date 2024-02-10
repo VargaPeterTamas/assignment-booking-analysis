@@ -14,7 +14,8 @@ The scripts assume that you have Apache Spark and PySpark installed in your envi
 
 bookings_path: Path to the directory containing raw bookings data (JSON format).
 output_path: Path to the output directory where the transformed data will be stored (Parquet format).
-Functionality:
+
+### Functionality:
 
 Reads raw bookings data.
 Expands nested structures in the data (passengersList, productsList).
@@ -30,14 +31,14 @@ bookings_parquet_path: Path to the Parquet file containing the transformed booki
 airports_path: Path to the CSV file containing airport information.
 start_date and end_date: Date range for filtering the bookings.
 output_path: Path to store the final result in CSV format.
-Functionality:
+
+### Functionality:
 
 Reads the transformed bookings data from Parquet.
 Filters data based on specified criteria (KLM flights, confirmed bookings, etc.).
 Joins with airport information and performs additional time zone adjustments.
 Aggregates booking statistics per country, day of the week, and season.
 Writes the final result as a CSV file.
-Example Usage:
 
 ## Usage Recommendations:
 
