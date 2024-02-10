@@ -1,8 +1,8 @@
 # Commercial Booking Analysis
 
-This is a prototype. There is two script added, the first one,  transform_bookings.py is responsible for transforming the raw data into a specified format. In this point I save date in parquet format with partitioned by date. This will help to reduce time when querying for a given time period as the user will not load all the data, just the necessary part of it. THe second script, create_ranking.py is responsible to create the final table which was requested. 
+This is a prototype. There is two script added, the first one,  transform_bookings.py is responsible for transforming the raw data into a specified format. In this point I save data in parquet format partitioned by date. This will help reduce time when querying for a given time period as the user will not load all the data, just the necessary part of it. The second script, create_ranking.py is responsible to create the final table which was requested. 
 
-Additional batches can arrive with KPIs generated and  with data visualization methods for a better understanding of the data.
+Additional batches will arrive containing data visualization methods for a better understanding of the data.
 
 ## Documentation:
 
